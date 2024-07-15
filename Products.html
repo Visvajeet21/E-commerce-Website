@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <!--we have added this view port tag and set initial scale to 1 so that our side shoudl be adjustable according to different devices especially for mobile devices-->
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="Front.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--poppins font from google fonts website then select popping select some types and then embed-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--link to connect to font awesome 4 to use different icons, just type font awesome 4 cdn and click on first link and copy the url and past it here with rel="stylesheet"-->
+  </head>
+
+  <body>
+    <div class="container">
+      <!--making navigation bar consist of logo and menu links-->
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="RedStore logo" width="125px" />
+        </div>
+
+        <!--menu-->
+        <nav>
+          <ul id="MenuItems">
+            <!--use this id in js-->
+            <li><a href="Front.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Account.html">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/cart.png"
+          alt="cart"
+          width="30px"
+          height="30px"
+        /><!--adding cart image in navigation section -->
+      </div>
+    </div>
+
+    <!--what we have done here is that we have copied everything from main index.html file and to show products only in this page, we have removed every thin except navbar and footer and now we will modify it according to our requirements-->
+    <!--Featured Products-->
+    <!--using same class small container to maintain same styling-->
+
+    <div class="small container">
+      <!--we have create an another row to add title and give user dropdown list with four options so they can select what they want-->
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort by Price</option>
+          <option>Sort by Popularity</option>
+          <option>Sort by Sale</option>
+        </select>
+      </div>
+
+      <!--This is the same class which already have index.html consisting of 4 columns-->
+      <div class="row">
+        <!--this time we will make 4 columns-->
+
+        <!--it contains 4 different products with heading h4, image, price <p> and rating star-->
+        <div class="col-4">
+          <img src="Images/product-1.jpg" /><!--product img-->
+          <h4>Red Printed T-shirt</h4>
+          <!--product title-->
+          <div class="rating">
+            <!--add stars for rating of product from font awesome 4-->
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>$50.00</p>
+          <!--product price-->
+        </div>
+
+        <div class="col-4">
+          <img src="Images/product-2.jpg" /><!--product img-->
+          <h4>Black Shoes</h4>
+          <!--product title-->
+          <div class="rating">
+            <!--add stars for rating of product from font awesome 4-->
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>$70.00</p>
+          <!--product price-->
+        </div>
+
+        <div class="col-4">
+          <img src="Images/product-3.jpg" /><!--product img-->
+          <h4>Grey pant</h4>
+          <!--product title-->
+          <div class="rating">
+            <!--add stars for rating of product from font awesome 4-->
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>$40.00</p>
+          <!--product price-->
+        </div>
+
+        <div class="col-4">
+          <img src="Images/product-4.jpg" /><!--product img-->
+          <h4>Blue Printed T-shirt</h4>
+          <!--product title-->
+          <div class="rating">
+            <!--add stars for rating of product from font awesome 4-->
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <p>$50.00</p>
+          <!--product price-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
